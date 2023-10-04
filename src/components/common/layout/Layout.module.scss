@@ -12,7 +12,7 @@
 		width: 80vw;
 		margin: 5vh auto;
 		min-height: 60vh;
-		transform: translateY(100px);
+		transform: translateX(100px);
 		opacity: 0;
 		transition: transform 1s 0.5s, opacity 1s 0.5s;
 		h1 {
@@ -27,7 +27,7 @@
 		}
 		.content {
 			opacity: 1;
-			transform: translateY(0px);
+			transform: translateX(0px);
 		}
 	}
 }
