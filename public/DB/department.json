@@ -3,32 +3,32 @@
     {
       "name": "David",
       "position": "President",
-      "pic": "pic1.jpg"
+      "pic": "member1.jpg"
     },
     {
       "name": "Julia",
       "position": "Vice President",
-      "pic": "pic2.jpg"
+      "pic": "member2.jpg"
     },
     {
       "name": "Emily",
       "position": "UI Designer",
-      "pic": "pic3.jpg"
+      "pic": "member3.jpg"
     },
     {
       "name": "Michael",
       "position": "Front-end Developer",
-      "pic": "pic4.jpg"
+      "pic": "member4.jpg"
     },
     {
       "name": "Emma",
       "position": "Back-end Developer",
-      "pic": "pic5.jpg"
+      "pic": "member5.jpg"
     },
     {
       "name": "Peter",
       "position": "Project Manager",
-      "pic": "pic6.jpg"
+      "pic": "member6.jpg"
     }
   ]
 }
