@@ -1,5 +1,6 @@
 import Layout from '../../common/layout/Layout';
 import { useEffect, useState } from 'react';
+import styles from './Department.module.scss';
 const path = process.env.PUBLIC_URL;
 
 export default function Department() {
@@ -23,8 +24,8 @@ export default function Department() {
 	}, []);
 
 	return (
-		<Layout title={'Department'}>
-			<div>
+		<Layout title={'Department'} styleName={styles.department}>
+			<div className={styles.historyBox}>
 				{History.map((data, idx) => {
 					return (
 						<article key={idx}>
@@ -39,17 +40,20 @@ export default function Department() {
 					);
 				})}
 			</div>
-			{Department.map((member, idx) => {
-				return (
-					<article key={idx}>
-						<div className='pic'>
-							<img src={`${path}/img/${member.pic}`} alt={member.name} />
-						</div>
-						<h2>{member.name}</h2>
-						<p>{member.position} </p>
-					</article>
-				);
-			})}
+
+			<div className={styles.memberBox}>
+				{Department.map((member, idx) => {
+					return (
+						<article key={idx}>
+							<div className='pic'>
+								<img src={`${path}/img/${member.pic}`} alt={member.name} />
+							</div>
+							<h2>{member.name}</h2>
+							<p>{member.position} </p>
+						</article>
+					);
+				})}
+			</div>
 		</Layout>
 	);
 }
